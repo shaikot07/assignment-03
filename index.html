@@ -19,7 +19,7 @@
                 extend: {
                   colors: {
                     clifford: '#da373d',
-                    'bg-color': 'pink',
+                    
                   }
                 }
               }
@@ -40,11 +40,12 @@
             }
       </style>
 </head>
-<body>
+<body class="">
       <!-- header section start  -->
-      <header class="">
-            <div class="navbar bg-amber-100">
-                  <div class="navbar-start flex-1 ">
+      <header class="overflow-x-hidden max-w-screen-lg mx-auto ">
+            <div class="navbar flex-row-reverse md:flex-row bg-amber-100 mt-5 rounded-full">
+              
+                  <div class=" justify-end md:justify-start flex-1 ">
                     <div class="dropdown">
                       <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -80,7 +81,7 @@
                   </div>
                   <div class="flex-1 gap-11 place-content-between ">
                         <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-                        <div class="">
+                        <div class="hidden md:block">
                               <a class="btn">Button</a>
                         </div>
                   </div>
@@ -143,25 +144,25 @@
             </div>
           </div>
          </section>
-         <section class="bg-amber-500   max-w-[60%] mx-auto p-6 grid grid-cols-1 gap-4 md:grid-cols-5 md:gap-16 md:-mt-20 relative">
+         <section class="bg-white items-center  hidden max-w-[70%] mx-auto p-6 md:grid  gap-4 md:grid-cols-3 xl:grid-cols-5 md:gap-16 md:-mt-20 relative ">
             <div class="bg-white ">
-              <img src="images/fruit1.png" alt="">
+              <img class="h-[70px] w-[70px]" src="images/fruit1.png" alt="">
               <h6 class="text-center">Strawberry</h6>
             </div>
             <div class="bg-white ">
-              <img src="images/fruit2.png" alt="">
+              <img class="h-[70px] w-[70px]" src="images/fruit2.png" alt="">
               <h6 class="text-center">Strawberry</h6>
             </div>
             <div class="bg-white ">
-              <img src="images/fruit3.png" alt="">
+              <img class="h-[70px] w-[70px]" src="images/fruit3.png" alt="">
               <h6 class="text-center">Strawberry</h6>
             </div>
             <div class="bg-white ">
-              <img src="images/fruit4.png" alt="">
+              <img class="h-[70px] w-[70px]" src="images/fruit4.png" alt="">
               <h6 class="text-center">Strawberry</h6>
             </div>
             <div class="bg-white ">
-              <img src="images/fruit5.png" alt="">
+              <img class="h-[70px] w-[70px]" src="images/fruit5.png" alt="">
               <h6 class="text-center">Strawberry</h6>
             </div>
          </section>
@@ -172,10 +173,10 @@
       <main class="max-w-screen-lg mx-auto">
         <!-- Deal of the day section start -->
         <section class="mt-20">
-          <div class="flex gap-6">
-            <div class="flex-1">
-              <h3 class="text-3xl font-bold">Deal of the day</h3>
-              <p class=" w-[80%] mt-3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 </p>
+          <div class="flex flex-col ml-5 px-4 md:flex-row gap-6 ">
+            <div class="flex-1 items-center">
+              <h3 class="text-center md:text-3xl font-bold md:text-left">Deal of the day</h3>
+              <p class="text-center px-2 md:w-[80%] mt-3 md:text-left">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 </p>
             </div>
             <div class="flex- ">
               <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
@@ -215,6 +216,7 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <hr class="bg-black h-px w-full">
                   <p class="text-sm">Apples</p>
                   <div class="mb-3">
                     <i class="fa-solid fa-star text-color-1"></i>
@@ -252,8 +254,9 @@
                   <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">12.90$ - 18.85$</h2>
                   <p class="text-sm">Orange</p>
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <hr class="bg-black h-px w-full">
                   <div class="mb-3">
                     <i class="fa-solid fa-star text-color-1"></i>
                     <i class="fa-solid fa-star-half-stroke text-color-1"></i>
@@ -291,6 +294,7 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <hr class="bg-black h-px w-full">
                   <p class="text-sm">Dragon</p>
                   <div class="mb-3">
                     <i class="fa-solid fa-star text-color-1"></i>
@@ -305,6 +309,7 @@
                     <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
                       <form method="dialog" class="modal-box">
                         <img class="ml-[33%]" src="images/fruit8.png" alt="">
+                        <hr class="bg-black h-px w-full">
                         <h3 class="font-bold text-lg mt-5">Dragon</h3>
                         <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         <i class="fa-solid fa-star text-color-1"></i>
@@ -329,6 +334,7 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <hr class="bg-black h-px w-full">
                   <p class="text-sm">Banana</p>
                   <div class="mb-3">
                     <i class="fa-solid fa-star text-color-1"></i>
@@ -364,16 +370,17 @@
           </div>
           <div class="text-center mt-14"><button class="btn bg-new text-white ">Shop All</button></div>
         </section>
+        <!-- Deal of the day section End -->
         <!-- Meet the team section start -->
         <section class="bg-slate-400 mt-14">
           <div class="hero min-h-screen" style="background-image: url(images/team.png);">
-            <div class="hero-overlay bg-opacity-40"></div>
+            <div class="hero-overlay bg-opacity-70"></div>
             <div class="text-center text-neutral-content">
               <div class="w-[70%] ml-[15%]">
-                <h1 class="mb-5 text-3xl font-bold">Meet the team section</h1>
+                <h1 class="mb-2 mt-3 md:mb-5 text-3xl font-bold">Meet the team section</h1>
                 <p class="mb-5 text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
               </div>
-              <div class="grid grid-cols-4">
+              <div class="grid grid-cols-1 md:grid-cols-4">
                 <div class="card ">
                   <figure class="pt-6"><img src="/images/member1.png" alt="Shoes" /></figure>
                   <div class="card-body">
@@ -428,7 +435,13 @@
         </section>
         <!-- Meet the team section End -->
         
-        <!-- Deal of the day section End -->
+        <!-- Why Choose Us section start -->
+        <section class="mt-24">
+            <h3 class="text-3xl font-bold text-center">Why Choose Us</h3>
+            <p class="text-sm text-center w-[60%] mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div></div>
+        </section>
+        <!-- Why Choose Us section End -->
 
       </main>
       <!-- main End -->
