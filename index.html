@@ -45,8 +45,8 @@
 </head>
 <body class="">
       <!-- header section start  -->
-      <header class="overflow-x-hidden max-w-screen-lg mx-auto ">
-            <div class="navbar flex-row-reverse md:flex-row bg-amber-100 mt-5 rounded-full">
+      <header class="overflow-x-hidden max-w-sm md:max-w-screen-lg mx-auto ">
+            <div class="navbar flex-row-reverse md:flex-row bg-red-500 mt-5 rounded-full">
               
                   <div class=" justify-end md:justify-start flex-1 ">
                     <div class="dropdown">
@@ -54,38 +54,45 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                       </label>
                       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
+                        <li><a>Home</a></li>
                         <li>
-                          <a>Parent</a>
+                          <a>About Us</a>
                           <ul class="p-2">
                             <li><a>Submenu 1</a></li>
                             <li><a>Submenu 2</a></li>
                           </ul>
                         </li>
-                        <li><a>Item 3</a></li>
+                        <li><a>Shop</a></li>
                       </ul>
                     </div>
                     <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1">
-                          <li><a>Item 1</a></li>
+                        <ul class="menu menu-horizontal px-1 text-white">
+                          <li><a>Home</a></li>
                           <li tabindex="0">
                             <details>
-                              <summary>Parent</summary>
+                              <summary>About Us</summary>
                               <ul class="p-2">
                                 <li><a>Submenu 1</a></li>
                                 <li><a>Submenu 5</a></li>
                               </ul>
                             </details>
                           </li>
-                          <li><a>Item 3</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>All Fruits</a></li>
                         </ul>
                       </div>
                     
                   </div>
                   <div class="flex-1 gap-11 place-content-between ">
-                        <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                        <div class="flex items-center gap-1">
+                          <img class="h-8 w-8" src="images/logo.png" alt="">
+                          <a class=" normal-case text-xl font-bold text-white">Fruit Burst</a>
+                        </div>
                         <div class="hidden md:block">
-                              <a class="btn">Button</a>
+                          <div class=" bg-white rounded-full">
+                            <input class="input rounded-full" placeholder="Email"/>
+                            <button class="btn border-none bg-white join-item rounded-r-full"><i class="fa-solid fa-magnifying-glass"></i></button>
+                          </div>
                         </div>
                   </div>
                   
@@ -173,7 +180,7 @@
       </header>
       <!-- header section end  -->
       <!-- main start -->
-      <main class="max-w-screen-lg mx-auto">
+      <main class="max-w-sm md:max-w-screen-lg mx-auto">
         <!-- Deal of the day section start -->
         <section class="mt-20">
           <div class="flex flex-col ml-5 px-4 md:flex-row gap-6 ">
@@ -511,7 +518,7 @@
             <img src="images/logo.png" alt="">
             <h3 class="text-2xl font-bold">Fruit Burst</h3>
           </div> 
-          <ul class="flex gap-10 mt-6">
+          <ul class="grid grid-cols-3 md:grid md:grid-cols-6 gap-10 mt-6 ">
             <li>Home</li>
             <li>About Us</li>
             <li>Shop</li>
@@ -521,7 +528,7 @@
           </ul>
         </div> 
         <div>
-          <div class="grid grid-flow-col gap-6">
+          <div class="grid grid-cols-6 gap-6">
             <a><i class="fa-brands fa-twitter text-2xl"></i></a> 
             <a><i class="fa-brands fa-facebook text-2xl"></i></a> 
             <a><i class="fa-brands fa-youtube text-2xl"></i></a> 
